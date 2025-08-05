@@ -1,0 +1,35 @@
+.topbar 
+{
+    height: 100px;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 600px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.topbar .brand a img
+{
+    width: 100px;
+    height: 100px;
+}
+.topbar .nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.topbar .nav ul li
+{
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.topbar .nav ul li a:hover
+{
+    color: yellow;
+    transition: step-start 1s;
+}

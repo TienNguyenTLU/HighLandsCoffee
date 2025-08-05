@@ -1,0 +1,63 @@
+.appCard
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.appCard .block-1 
+{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    overflow: hidden;
+}
+.appCard .block-1 .appCard_img
+{
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.appCard .block-1 .arrow
+{
+    opacity: 0;
+    position: relative;
+    transition: linear 0.05s;
+    width: 30%;
+    height: 100%;
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30%;
+    cursor: pointer;
+}
+.appCard h1
+{
+    color: black;
+    font-size: 24px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.appCard:hover h1
+{
+    color: chocolate;
+}
+.appCard:hover .block-1 .arrow
+{
+    opacity: 100;
+}
+.appCard:hover .block-1 .appCard_img
+{
+    transform: translateX(-20px);
+    opacity: 50%;
+}
+

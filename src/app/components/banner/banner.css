@@ -1,0 +1,47 @@
+.banner 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    transition: ease-in-out 1s;
+}
+.banner .content h1
+{
+    width: 200px;
+    color: chocolate;
+    font-size: 48px;
+    font-family:cursive;
+}
+.banner .content p
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:brown;
+    width: 200px;
+}
+.banner .content button
+{
+    padding: 20px 50px;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.banner .banner-image
+{
+    transition: transform 0.3s ease;
+}
+
+.banner .banner-image:hover
+{
+    transform: scale(1.1);
+}
