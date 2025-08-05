@@ -1,15 +1,16 @@
 'use client'
-import { Home } from "lucide-react"
+import { Home, Map } from "lucide-react"
 import './topbar.css'
 import Image from "next/image"
 export default function Topbar()
 {
     const Navlist = 
     [
-        { _id : 1, name: "Trang chủ"},
-        {_id: 2, name: "Đặt hàng"},
-        { _id:3, name: "Liên hệ"},
-        { _id: 4, name: "Thông tin"},
+        { _id : 1, name: "Trang chủ",icon : ''},
+        {_id: 2, name: "Đặt hàng",icon : ''},
+        { _id:3, name: "Liên hệ",icon : ''},
+        {_id: 4, name: "Tìm kiếm cửa hàng", icon : <Map/>},
+        { _id: 5, name: "Thông tin",icon : ''},
     ]
     return (
         <div className="topbar">

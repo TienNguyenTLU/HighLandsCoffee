@@ -5,6 +5,8 @@ import FoodList from '../foodlist/foodlist'
 import Footer from '../footer/footer'
 import ServiceLayout from '../service_layout/service_layout'
 import App from '../application/application'
+import Store from '../store/store'
+import Gift from '../gift/gift'
 export default function Main() {
     return (
         <main>
@@ -13,7 +15,8 @@ export default function Main() {
             <h1 className='title-1'>Đồng hành cùng HighLand</h1>
             <App/>
             <ServiceLayout/>
-            <FoodList/>
+            <Store/>
+            <Gift/>
             <Footer/>
         </main>
     )

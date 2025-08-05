@@ -39,7 +39,7 @@ export default function Banner() {
                     <Image
                     src={item.image}
                     alt={"banner_img"}
-                    width={1600}
+                    width={1500}
                     height={100}
                     className="banner-image"
                     style={{ objectFit: 'cover' }}

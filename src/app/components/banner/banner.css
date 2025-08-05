@@ -1,10 +1,12 @@
 .slideShow {
     align-self: center;
     position: relative;
-    width: 1600px;
+    width: 1500px;
     height: 720px;
     padding: 20px;
-    margin: 40px
+    margin: 40px;
+    overflow: hidden;
+    border: 10px;
 }
 .banner-image {
   border-radius: 20px;
@@ -17,4 +19,5 @@
 .image-wrapper
 {
     width: 100%;
+    border-radius: 20px;
 }

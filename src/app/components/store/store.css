@@ -1,0 +1,39 @@
+.storeFind
+{
+    width: 100%;
+    display: flex;
+    gap: 245px;
+    margin: 40px;
+    justify-content: flex-end;
+    background-color:aliceblue;
+}
+
+.text-block 
+{
+    color: black;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-block .title
+{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+.text-block .btn-find
+{
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px gray;
+    padding: 20px 30px;
+    transition:ease-in-out 0.5s;
+}
+.text-block .btn-find:hover
+{
+    background-color: chocolate;
+    color: azure;
+}
