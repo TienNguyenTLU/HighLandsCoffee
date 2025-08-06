@@ -40,9 +40,9 @@ export default function Banner() {
                     src={item.image}
                     alt={"banner_img"}
                     width={1500}
-                    height={100}
+                    height={1000}
                     className="banner-image"
-                    style={{ objectFit: 'cover' }}
+                    objectFit='cover'
                     />
             </SwiperSlide>
             ))}

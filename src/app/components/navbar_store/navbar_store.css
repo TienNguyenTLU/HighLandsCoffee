@@ -1,0 +1,69 @@
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Top-panel
+{
+    background-color: brown;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap:80px;
+    align-items: center;
+}
+.searchBar
+{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.searchInp
+{
+    width: 350px;
+    height: auto;
+    padding: 5px;
+    color: black;
+    outline: none;
+    animation: fadeInText 0.3s ease-in-out;
+}
+.searchBar a
+{
+    color: black;
+    padding: 10px;
+}
+.delivery 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.login
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    
+}
+.login a:hover
+{
+    color:burlywood;
+}
+.cart
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:10px
+}
+

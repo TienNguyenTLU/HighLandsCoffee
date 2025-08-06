@@ -6,11 +6,11 @@ export default function Topbar()
 {
     const Navlist = 
     [
-        { _id : 1, name: "Trang chủ",icon : ''},
-        {_id: 2, name: "Đặt hàng",icon : ''},
-        { _id:3, name: "Liên hệ",icon : ''},
-        {_id: 4, name: "Tìm kiếm cửa hàng", icon : <Map/>},
-        { _id: 5, name: "Thông tin",icon : ''},
+        { _id : 1, name: "Trang chủ",url : ''},
+        {_id: 2, name: "Đặt hàng",url : '/store'},
+        { _id:3, name: "Liên hệ",url : ''},
+        {_id: 4, name: "Tìm kiếm cửa hàng", url :'#'},
+        { _id: 5, name: "Thông tin",url : ''},
     ]
     return (
         <div className="topbar">
@@ -28,7 +28,7 @@ export default function Topbar()
             <div className="nav">
                 <ul>
                     {Navlist.map((item) => (
-                        <li key={item._id}><a href="#">{item.name}</a></li>
+                        <li key={item._id}><a href={item.url}>{item.name}</a></li>
                     ))}
                 </ul>
                 
