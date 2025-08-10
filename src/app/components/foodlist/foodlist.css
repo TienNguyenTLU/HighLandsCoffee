@@ -4,15 +4,11 @@
     padding: 30px;
     transition: ease-in-out 1s;
 }
-.swiper-button-prev,
-.swiper-button-next 
+.foodlist ul
 {
-  color: orange !important;
-  font-weight: bold;
-  transition: color 0.3s;
-}
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  color: #cc3300 !important;
+  display: flex;
+  justify-content: space-around;
+  gap:35px;
+  align-items: center;
 }

@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import './banner.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 export default function Banner() {
@@ -13,7 +13,7 @@ export default function Banner() {
   },
   {
     id: 2,
-    image: '/Promo2.jpg'
+    image: '/Promo2.webp'
   },
   {
     id: 3,
@@ -23,29 +23,29 @@ export default function Banner() {
     return (
         <div className='slideShow'>
             <Swiper
-            modules={[Autoplay, Pagination]}
-            spaceBetween={0}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
-            }}
-            pagination={{ clickable: true }}
-            className="banner-swiper"
-        >
-        {banners.map((item) => (
-            <SwiperSlide className='image-wrapper' key={item.id}>
-                    <Image
-                    src={item.image}
-                    alt={"banner_img"}
-                    width={1500}
-                    height={1000}
-                    className="banner-image"
-                    objectFit='cover'
-                    />
-            </SwiperSlide>
-            ))}
+              className='banner-swiper'
+              modules={[Autoplay,Navigation,Pagination]}
+              loop
+              autoplay={{ delay: 4000, disableOnInteraction: false }}
+              pagination={{clickable: true}}
+              slidesPerView={1}
+            >
+              {
+                banners.map((item) => 
+                (
+                  <SwiperSlide >
+                    <div className='relative w-full h-full'>
+                      <Image
+                          fill
+                          alt='banner_img'
+                          className='banner_slide'
+                          src={item.image}
+                          style={{transition: 'ease-in-out 0.3s'}}
+                      />
+                    </div> 
+                  </SwiperSlide>
+                ))
+              }
             </Swiper>
         </div> 
     )

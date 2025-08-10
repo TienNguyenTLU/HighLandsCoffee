@@ -10,14 +10,19 @@ main
 }
 .block-1
 {
-    width: 90%;
-    height: 800px;
+    width: 80%;
+    height: 600px;
     display: flex;
     padding: 70px;
+    margin: 30px;
     justify-content: center;
     align-items: center;
 }
-.block-1 Banner
+.block-1 .slideShow
 {
-    
+    width: 1010px;
+    height: 620px;
+    padding: 12px;
+    overflow: hidden;
+    border-radius: 10px;
 }
