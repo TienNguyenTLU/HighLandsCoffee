@@ -1,14 +1,7 @@
-.foodlist
-{
-    width: 55%;
+.foodlist {
+    width: 100%;
     padding: 30px;
-    transition: ease-in-out 1s;
-}
-.foodlist ul
-{
-
-  display: flex;
-  justify-content: space-around;
-  gap:35px;
-  align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 35px;
 }
