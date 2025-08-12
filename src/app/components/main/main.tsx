@@ -12,7 +12,7 @@ export default function Main() {
         <main>
             <Topbar />
             <Banner />
-            <h1 className='title-1'>Đồng hành cùng HighLand</h1>
+            <h1 className='title-1'>Đồng hành cùng Highlands</h1>
             <App/>
             <ServiceLayout/>
             <Store/>
