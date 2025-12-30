@@ -9,11 +9,11 @@ export default function Banner() {
     const banners = [
   {
     id: 1,
-    image: '/Promo1.webp'
+    image: '/promo1.webp'
   },
   {
     id: 2,
-    image: '/Promo2.webp'
+    image: '/promo2.webp'
   },
 ];
     return (
