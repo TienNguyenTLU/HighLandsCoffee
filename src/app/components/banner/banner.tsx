@@ -15,10 +15,6 @@ export default function Banner() {
     id: 2,
     image: '/Promo2.webp'
   },
-  {
-    id: 3,
-    image: '/Promo3.jpg'
-  },
 ];
     return (
         <div className='slideShow'>

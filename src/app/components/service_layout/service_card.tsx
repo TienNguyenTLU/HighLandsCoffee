@@ -1,6 +1,12 @@
 import './service_card.css'
 import Image from "next/image"
-export default function ServiceCard({Foodtype})
+type Props = {
+    Foodtype: {
+        title: string,
+        image: string
+    }
+}   
+export default function ServiceCard({Foodtype}: Props)
 {
     return (
         <div className="srvCard">

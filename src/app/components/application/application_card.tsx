@@ -1,7 +1,14 @@
 import { ArrowBigRightDash } from 'lucide-react'
 import './application_card.css'
 import Image from "next/image"
-export default function appCard({appType})
+type Props = {
+    appType: {
+        _id: number,
+        title: string,
+        img: string
+    }
+}
+export default function appCard({appType}: Props)
 {
     return (
         <div className="appCard">

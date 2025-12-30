@@ -1,5 +1,12 @@
 import './foodcard.css'
-export default function FoodCard({food}) {
+type Props = {
+    food: {
+        name: string,
+        image: string,
+        price: number
+    }
+}
+export default function FoodCard({food}: Props) {
     return (
         <div className="food-card">
             <img src={food.image} alt={food.name} className="food-image" />
